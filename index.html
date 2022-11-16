@@ -1,124 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('#c5').hide()
-            $('#d5').click(function(){
-                $('#c1').hide(200)
-                $('#c5').show(200)
-                
-            })
-            $('#c6').hide()
-            $('#d6').click(function(){
-                $('#c2').hide(200)
-                $('#c6').show(200)
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive personal portfolio website design tutorail</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 
-            })
-            $('#c7').hide()
-            $('#d7').click(function(){
-                $('#c3').hide(200)
-                $('#c7').show(200)
-
-            })
-            $('#c8').hide()
-            $('#d8').click(function(){
-                $('#c4').hide(200)
-                $('#c8').show(200)
-
-            })       
-            
-            
-            function fun() {
-                // var r = Math.floor(Math.random() * 700)
-                // var c = Math.floor(Math.random() * 10)
-                function fun1() {
-                    let car=$('#c5')
-                    let r = Math.floor(Math.random() * 200)
-                    let c = Math.floor(Math.random() * 5)
-                    let s = Math.floor(Math.random() * 200)
-                    
-                    car.animate({left:'+='+(800-s), top:r-c},700)
-                    // car1.animate({top:r-c},1)
-                    
-                    if (car.position().left >= 2580 || car.position().top >= 750 || car.position().top < 1) {
-                        car.hide()
-                    }
-                }
-                setInterval(fun1,1)
-
-
-                function fun2() {
-                    let car=$('#c6')
-                    let r = Math.floor(Math.random() * 200)
-                    let c = Math.floor(Math.random() * 5)
-                    let s = Math.floor(Math.random() * 200)
-                    
-                    car.animate({left:'+='+(800-s), top:r-c},700)
-                    // car1.animate({top:r-c},1)
-                    
-                    if (car.position().left >= 2580 || car.position().top >= 750 || car.position().top < 1) {
-                        car.hide()
-                    }
-                }
-                setInterval(fun2,1)
-
-                function fun3() {
-                    let car=$('#c7')
-                    let r = Math.floor(Math.random() * 200)
-                    let c = Math.floor(Math.random() * 5)
-                    let s = Math.floor(Math.random() * 200)
-                    
-                    car.animate({left:'+='+(800-s), top:r-c},700)
-                    // car1.animate({top:r-c},1)
-                    
-                    if (car.position().left >= 2580 || car.position().top >= 750 || car.position().top < 1) {
-                        car.hide()
-                    }
-                }
-                setInterval(fun3,1)
-
-                function fun4() {
-                    let car=$('#c8')
-                    let r = Math.floor(Math.random() * 200)
-                    let c = Math.floor(Math.random() * 5)
-                    let s = Math.floor(Math.random() * 200)
-                    
-                    car.animate({left:'+='+(800-s), top:'+='+(c-r)},700)
-                    // car1.animate({top:r-c},1)
-                    
-                    if (car.position().left >= 2580 || car.position().top >= 750 || car.position().top < 1) {
-                        car.hide()
-                    }
-                }
-                setInterval(fun4,1)
-                
-            }
-
-            $('#b1').click(function(){
-                a=setInterval(fun, 10)
-            })
-            $('#b2').click(function(){
-                window.location.href = "index(1).html";
-
-            })
-        })
-
-    </script>
-    
 </head>
-<body bgcolor="black">
-    <div id="d1" style="width: 100%;height:200px;border-bottom:20px white dashed;background-color:black;border-top:20px rgb(255, 213, 0) solid;"><img src="c1.png" id="c5" align=center style="height:170px;position: absolute;left:5px;top:30px;"></div>
-    <div id="d2" style="width: 100%;height:200px;border-bottom:20px white dashed;background-color:black;"><img src="c2.png" id="c6" align=center style="height:170px;position: absolute;left:5px;top:250px;"></div>
-    <div id="d3" style="width: 100%;height:200px;border-bottom:20px white dashed;background-color:black;"><img src="c3.png" id="c7" align=center style="height:170px;position: absolute;left:5px;top:490px;"></div>
-    <div id="d4" style="width: 100%;height:200px;border-bottom:20px rgb(255, 213, 0) solid;background-color:black;"><img src="c1.png" id="c8" align=center style="height:170px;position: absolute;left:5px;top:700px;"></div><br>
-    <div id="but" align="center"><input type="button" value="Start" id="b1" style="width: 150px;height: 75px; color:red; background-color:yellow; font-size: xx-large;"></div>
-    <div id="d5" style="width:24.4%;height:200px;border:5px blue solid;display: inline-block;padding-top: 15px;"><img src="c1.png" id="c1" align=center style="height:170px;"></div>
-    <div id="d6" style="width:24.4%;height:200px;border:5px blue solid;display: inline-block;padding-top: 15px;"><img src="c2.png" id="c2" align=center style="height:170px;"></div>
-    <div id="d7" style="width:24.4%;height:200px;border:5px blue solid;display: inline-block;padding-top: 15px;"><img src="c3.png" id="c3" align=center style="height:170px;"></div>
-    <div id="d8" style="width:24.4%;height:200px;border:5px blue solid;display: inline-block;padding-top: 15px;"><img src="c1.png" id="c4" align=center style="height:170px;"></div>
-    <br><br>
-    <div id="but" align="center"><input type="button" value="Next" id="b2" style="width: 150px;height: 75px; color:red; background-color:yellow; font-size: xx-large;"></div>
+
+<body>
+    <header>
+
+        <div class="user">
+            <img src="Image.jpg" alt="">
+            <h3 class="name">Anagha Dileep</h3>
+            <p class="post">Developer</p>
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#education">education</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+
+        <h3>HI THERE !</h3>
+        <h1>I'M <span>Anagha Dileep</span></h1>
+        <p>I am a third-year Btech computer science student. Passionate about coding and learning new things. Love to
+            compete and improve. Interested in Automation, Analysis, and Developing programs. Besides coding, I'm also a
+            singer, baker, orator, writer and an avid reader.            
+        </p>
+        <a href="#about"><button class="btn">about me <i class="fas fa-user"></i></button></a>
+
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- about section starts  -->
+
+    <section class="about" id="about">
+
+        <h1 class="heading"> <span>about</span> me </h1>
+
+        <div class="row">
+
+            <div class="info">
+                <h3> <span> name : </span> Anagha Dileep </h3>
+                <h3> <span> age : </span> 20 </h3>
+                <h3> <span> qualification : </span> B-Tech CSE (III year)</h3>
+                <h3> <span> post : </span> Developer </h3>
+                <h3> <span> language : </span> Hindi, English, Malayalam </h3>
+                <a href="#"><button class="btn"> download CV <i class="fas fa-download"></i> </button></a>
+            </div>
+
+    </section>
+
+    <!-- about section ends -->
+
+    <!-- education section starts  -->
+
+    <section class="education" id="education">
+
+        <h1 class="heading"> my <span>education</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2006-2020</span>
+                <h3>High School</h3>
+                <p>Finished highschool from St.George's School and passed out with an aggregate percentage of 84%</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2020-2024</span>
+                <h3>College</h3>
+                <p>Currently pursuing B-Tech Computer Science and Engineering from Karunya Institute of Technology and Sciences.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- education section ends -->
+
+    <section class="contact" id="contact">
+
+        <h1 class="heading"> <span>contact</span> me </h1>
+
+        <div class="row">
+
+            <div class="content">
+                <h3 class="title">contact info</h3>
+                <div class="info">
+                    <h3> <i class="fas fa-envelope"></i> anaghadileep.work@gmail.com </h3>
+                    <h3> <i class="fas fa-phone"></i> 9990842459 </h3>
+                    <h3> <i class="fas fa-map-marker-alt"></i> Delhi - India - 110096. </h3>
+                </div>
+            </div>
+            <form action="">
+                <input type="text" placeholder="name" class="box">
+                <input type="email" placeholder="email" class="box">
+                <input type="text" placeholder="project" class="box">
+                <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
+                <button type="submit" class="btn"> send <i class="fas fa-paper-plane"></i> </button>
+            </form>
+        </div>
+    </section>
+    <a href="#home" class="top">
+        <img src="images/scroll-top-img.png" alt="">
+    </a>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
